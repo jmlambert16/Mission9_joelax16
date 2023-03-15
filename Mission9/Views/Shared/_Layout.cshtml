@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -30,7 +32,14 @@
         </nav>
     </header>
     <div class="bg-dark text-white p-2">
-        <span class="navbar-brand ml-2"> Book Store</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col navbar-brand">BookStore</div>
+                <div class="col-6 text-right">
+                    <vc:cart-summary />
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row m-1 p-1">
         <div id="categories" class="col-3">
